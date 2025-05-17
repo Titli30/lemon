@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+}
+
+#landing-page {
+  height: 100vh;
+  background: linear-gradient(to right, #58c6ef, #1b94b4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 1em;
+  background: white;
+  color: #1b94b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#resume-builder {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 30px;
+}
+
+.form-container {
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  background: #1b94b4;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+#cv-preview {
+  width: 60%;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.template-style {
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  width: 35%;
+  background: #1b1b2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.left-section img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.left-section h2 {
+  margin: 10px 0 5px;
+  color: #58c6ef;
+}
+
+.left-section p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.right-section {
+  width: 65%;
+}
+
+.right-section h2 {
+  border-bottom: 2px solid #1b1b2f;
+  color: #1b1b2f;
+  padding-bottom: 5px;
+}
+
+.right-section p, .right-section li {
+  font-size: 0.95em;
+}
