@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="landing-page">
+    <div class="hero">
+      <h1>Create Your Professional Resume</h1>
+      <p>Build your personalized resume with ease</p>
+      <button onclick="startBuilding()">Start Building</button>
+    </div>
+    <footer>© 2025 Resume Builder</footer>
+  </div>
+
+  <div id="resume-builder" style="display: none;">
+    <div class="form-container">
+      <input id="nameField" placeholder="Your Name" />
+      <input id="guardianField" placeholder="Guardian Name" />
+      <input id="contactField" placeholder="Contact Number" />
+      <input id="emailField" placeholder="Email" />
+      <input id="addressField" placeholder="Address" />
+      <input id="githubField" placeholder="GitHub Link" />
+      <input id="languagesField" placeholder="Languages (comma separated)" />
+      <input id="hobbiesField" placeholder="Hobbies (comma separated)" />
+      <input id="skillsField" placeholder="Skills (comma separated)" />
+      <textarea id="summaryField" placeholder="Profile Summary"></textarea>
+      <input id="imgField" type="file" />
+
+      <h3>Education</h3>
+      <div id="edu-container"></div>
+      <button onclick="addEducation()">Add Education</button>
+
+      <h3>Experience</h3>
+      <div id="exp-container"></div>
+      <button onclick="addExperience()">Add Experience</button>
+
+      <h3>Projects</h3>
+      <div id="proj-container"></div>
+      <button onclick="addProject()">Add Project</button>
+
+      <button onclick="generateCV()">Generate CV</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <div id="cv-preview" class="template-style">
+      <!-- CV preview will be generated here -->
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
